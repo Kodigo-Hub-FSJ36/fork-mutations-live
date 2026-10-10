@@ -68,6 +68,7 @@ export async function deleteTask(id: string): Promise<void> {
     await sleep(200);
     const index = tasks.findIndex((t) => t.id === id);
     if (index === -1) throw new Error(`No existe la tarea con id ${id}`);
+    tasks.splice(index, 1);
 }
 
 export async function toogleTask(id: string): Promise<void> {
