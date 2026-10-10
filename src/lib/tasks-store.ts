@@ -10,7 +10,7 @@ export type Task = {
 };
 
 
-const tasks: Task[] = [
+export const tasks: Task[] = [
     {
         id: "1",
         titulo: "Repasar Server Actions",
